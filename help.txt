@@ -1,9 +1,0 @@
-Instructor Pages
-Single Video -> Update
-Instructor Signup
-Course Detail Page -> Detail + Update
-
-Audience
-Comments in Video
-Overview, QnA, Announcements toggle
-Course Detail Page
