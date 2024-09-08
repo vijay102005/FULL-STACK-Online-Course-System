@@ -1,0 +1,13 @@
+.topbar {
+    background-color: #1976d2;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topbar input[type="text"] {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}

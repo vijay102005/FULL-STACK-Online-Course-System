@@ -1,0 +1,106 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 100%;
+    width: 80%;
+    animation: fadeIn 0.5s ease-out;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dashboard-container h2 {
+    font-size: 15px;
+    color: #343a40;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 17px;
+}
+
+tbody tr {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #f1f3f5;
+    transform: translateY(-3px);
+}
+
+td {
+    vertical-align: middle;
+}
+
+td .action-buttons {
+    display: flex;
+    justify-content: space-between; /* Added to distribute space between the buttons */
+    gap: 20px; /* Increased space between buttons */
+}
+
+td button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 14px;
+}
+
+.open-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.open-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

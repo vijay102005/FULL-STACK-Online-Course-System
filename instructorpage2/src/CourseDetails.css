@@ -1,0 +1,343 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.course-details-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.course-details-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(25, 118, 210, 0.1), rgba(0, 0, 0, 0));
+    z-index: 0;
+}
+
+.course-details-container h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.course-details-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+/* Tabs */
+.tabs ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.tabs ul li {
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #777;
+    background-color: #e8ecef;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tabs ul li.active {
+    background-color: #1976d2 !important;
+    color: #ffffff !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.tabs ul li:hover {
+    background-color: #1976d2 !important;
+    color: #ffffff !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Announcement Section */
+.announcement {
+    margin-top: 20px;
+}
+
+.add-announcement-btn,
+.add-material-btn,
+.add-assignment-btn {
+    margin-bottom: 20px;
+    background-color: #1976d2 !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding: 12px 25px !important;
+    border-radius: 25px !important;
+    transition: transform 0.2s ease, background-color 0.3s ease !important;
+    position: relative;
+    z-index: 1;
+}
+
+.add-announcement-btn:hover,
+.add-material-btn:hover,
+.add-assignment-btn:hover {
+    background-color: #125ea3 !important;
+    transform: translateY(-3px) !important;
+}
+
+.announcement-item,
+.materials-item,
+.assignments-item,
+.feedback-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.announcement-item:hover,
+.materials-item:hover,
+.assignments-item:hover,
+.feedback-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-item h3,
+.materials-item h3,
+.feedback-item h3 {
+    margin: 0;
+    color: #1976d2;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.remove-btn {
+    background-color: #f44336 !important;
+    color: white !important;
+    margin-top: 10px;
+    font-weight: bold !important;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+    border-radius: 25px !important;
+    padding: 8px 20px !important;
+    position: relative;
+    z-index: 1;
+}
+
+.remove-btn:hover {
+    background-color: #d32f2f !important;
+    transform: translateY(-3px) !important;
+}
+
+/* Assignment Table Styles */
+.assignments-container {
+    margin-top: 20px;
+}
+
+.assignments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.assignments-table th,
+.assignments-table td {
+    text-align: left;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+}
+
+.assignments-table th {
+    background-color: #1976d2 !important;
+    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.assignments-table tr {
+    transition: background-color 0.2s ease;
+}
+
+.assignments-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.assignments-table a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.assignments-table a:hover {
+    text-decoration: underline;
+}
+
+/* Chat Styles */
+.chat-container {
+    margin-top: 20px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.messages-list {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.message-item {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.message-item.student {
+    background-color: #ffeb3b;
+    margin-left: auto;
+}
+
+.message-item .sender {
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.message-item.student .sender {
+    color: #f57f17;
+}
+
+.message-item .timestamp {
+    font-size: 12px;
+    color: #999;
+    float: right;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.input-container input:focus {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    border-radius: 25px !important;
+    background-color: #1976d2 !important;
+    color: white !important;
+    font-weight: bold !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+}
+
+.input-container button:hover {
+    background-color: #125ea3 !important;
+    transform: translateY(-3px) !important;
+}
+
+/* Dialog Styles */
+.MuiDialog-paper {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.5s ease;
+    background: #ffffff;
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.MuiDialogTitle-root {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1976d2;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.MuiDialogContent-root {
+    padding: 20px;
+}
+
+.MuiDialogActions-root {
+    padding: 15px 20px;
+    background-color: #fafafa;
+    border-top: 1px solid #e0e0e0;
+    text-align: right;
+}
+
+.MuiDialogActions-root button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #1976d2;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.MuiDialogActions-root button:hover {
+    background-color: #125ea3;
+    transform: translateY(-3px);
+}
+
+.MuiBackdrop-root {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+

@@ -1,0 +1,111 @@
+/* src/CreateCourse.css */
+
+.create-course-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 90vw; /* Increased width to 90% of the viewport width */
+    width: 600px; /* Fixed width for larger screens */
+    margin: 50px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevents horizontal scrolling */
+}
+
+.create-course-container h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+
+.create-course-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.create-course-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.create-course-btn:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+.success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    20% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}

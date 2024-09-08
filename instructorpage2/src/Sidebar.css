@@ -1,0 +1,62 @@
+/* src/Sidebar.css */
+
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #61dafb; /* Light blue color for the title */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px; /* Adjusted padding */
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #495057; /* Darker background on hover */
+    transform: translateX(5px);
+}
+
+.sidebar ul li a .fa-icon {
+    margin-right: 20px; /* Increased space between icon and text */
+    font-size: 18px; /* Adjust icon size */
+}
+
+.sidebar ul li a span {
+    font-size: 16px; /* Main text size */
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover span {
+    color: #007bff; /* Change text color on hover */
+}
