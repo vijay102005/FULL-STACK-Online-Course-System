@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+📚 Online Course Management System (MERN Stack)
+🔧 Tech Stack
+MongoDB – Database
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Express.js – Backend API
 
-## Available Scripts
+React.js – Frontend
 
-In the project directory, you can run:
+Node.js – Server-side runtime
 
-### `npm start`
+Mongoose – MongoDB object modeling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+📌 Project Description
+The Online Course Management System is a full-stack web application that allows instructors to manage courses and students to enroll, learn, and interact. It includes features like course creation, task submission, real-time progress tracking, and a chat board for communication.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+👨‍💻 My Role: Database Developer
+Designed and implemented the MongoDB database schema
 
-### `npm test`
+Created collections for users, courses, announcements, assignments, and materials
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Managed relationships between students, instructors, and courses using Mongoose models
 
-### `npm run build`
+Integrated CRUD operations for all major entities via Express APIs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Implemented data validation and indexing for performance and consistency
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+✅ Key Features
+🧑‍🏫 Instructor Dashboard: Course creation, announcements, materials, assignments
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👨‍🎓 Student Dashboard: Course enrollment, task submissions, progress tracking
 
-### `npm run eject`
+🔔 Announcements: Instructors can post and delete course-related updates
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+📂 Materials Upload: Upload PDF files for course content
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📝 Assignments: Upload and manage assignments per course
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+💬 Chat Board: Real-time communication between students and instructors
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+🗃️ MongoDB Collections
+users – stores student and instructor data
 
-## Learn More
+courses – contains course details, instructor reference
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+announcements – linked to courses
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+materials – PDF upload metadata, linked to courses
 
-### Code Splitting
+assignments – assignment upload details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+messages – for chat system
 
-### Analyzing the Bundle Size
+🛠️ Setup Instructions
+Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run npm install in both client/ and server/ directories
 
-### Making a Progressive Web App
+Set up your .env with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+ini
+Copy
+Edit
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+JWT_SECRET=your_secret_key
+Start the backend: npm start in the server/ folder
 
-### Advanced Configuration
+Start the frontend: npm start in the client/ folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Navigate to http://localhost:3000 in your browser
 
-### Deployment
+📌 Future Enhancements
+Role-based access control
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Email notifications for announcements and deadlines
 
-### `npm run build` fails to minify
+File submission history
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Leaderboard enhancements
